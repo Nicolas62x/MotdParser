@@ -2,7 +2,9 @@
 using System.Text;
 using System.Text.Json;
 
-struct MCMotd
+namespace MotdParser;
+
+public struct MCMotd
 {
     string? description = null;
     Players? players = null;
