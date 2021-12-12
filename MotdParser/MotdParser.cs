@@ -144,6 +144,10 @@ public struct MCMotd
             {
                 builder.Append(parts[i].Substring(1));
             }
+            else if (parts[i][0] == '#')
+            {
+                builder.Append(parts[i].Substring(7));
+            }
             else
             {
                 builder.Append('§');
